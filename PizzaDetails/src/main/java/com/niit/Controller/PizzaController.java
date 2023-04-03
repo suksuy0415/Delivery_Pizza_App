@@ -21,14 +21,14 @@ public class PizzaController {
     public PizzaController(PizzaService pizzaService){this.pizzaService=pizzaService;}
 
 
-    @PostMapping("/addOrder")
+    @PostMapping("/order/addOrder")
     public ResponseEntity<?> savePizzaDetails(@RequestBody Pizza pizza)
     {
         Pizza pizzaOrder=pizzaService.savePizzaDetails(pizza);
         return new ResponseEntity<>(pizzaOrder, HttpStatus.OK);
     }
 
-    @GetMapping("/Orders")
+    @GetMapping("/order/Orders")
     public ResponseEntity<?> findallOrdersDetails()
     {
         List<Pizza> ordersList=pizzaService.findallOrdersDetails();
