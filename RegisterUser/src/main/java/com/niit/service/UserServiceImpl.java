@@ -22,24 +22,20 @@ public class UserServiceImpl implements UserService{
     @Override
     public User registerUser(User user) {
 
-        if(userRepository.findById(user.getEmail()).isPresent())
-        {
-
-        }
         return userRepository.save(user);
     }
 
-    @Override
-    public User findRegistrationToLogin(String email, String password) {
-
-        User loggedInUser = userRepository.findRegistrationToLogin(email,password);
-
-        if(loggedInUser == null)
-        {
-            //throw new InvalidCredentialsException();
-        }
-
-        return loggedInUser;
-
-    }
+//    @Override
+//    public User findRegistrationToLogin(String email, String password) {
+//
+//        User loggedInUser = userRepository.findRegistrationToLogin(email,password);
+//
+//        if(loggedInUser == null)
+//        {
+//            //throw new InvalidCredentialsException();
+//        }
+//
+//        return loggedInUser;
+//
+//    }
 }

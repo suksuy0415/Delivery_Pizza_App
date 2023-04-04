@@ -8,8 +8,8 @@ public interface PizzaService {
 
     Pizza savePizzaDetails(Pizza pizza);
 
-    List<Pizza> findallOrdersDetails();
-
-    Pizza getUserOrderDetails(String userName);
-    boolean deleteOrder(String userName);
+//    List<Pizza> findallOrdersDetails();
+//
+//    Pizza getUserOrderDetails(String userName);
+//    boolean deleteOrder(String userName);
 }

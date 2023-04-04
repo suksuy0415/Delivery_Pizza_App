@@ -23,19 +23,19 @@ public class PizzaServiceImpl implements PizzaService{
         return pizzaRepository.save(pizza);
     }
 
-    @Override
-    public List<Pizza> findallOrdersDetails() {
-        return pizzaRepository.findAll();
-    }
 
-    @Override
-    public Pizza getUserOrderDetails(String userName) {
-        return pizzaRepository.findById(userName).get();
-    }
-
-    @Override
-    public boolean deleteOrder(String userName) {
-        pizzaRepository.deleteById(userName);
-        return true;
-    }
+//    public List<Pizza> findallOrdersDetails() {
+//        return pizzaRepository.findAll();
+//    }
+//
+//    @Override
+//    public Pizza getUserOrderDetails(String userName) {
+//        return pizzaRepository.findById(userName).get();
+//    }
+//
+//    @Override
+//    public boolean deleteOrder(String userName) {
+//        pizzaRepository.deleteById(userName);
+//        return true;
+//    }
 }

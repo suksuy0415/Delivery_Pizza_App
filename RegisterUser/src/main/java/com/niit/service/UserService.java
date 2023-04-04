@@ -6,5 +6,5 @@ public interface UserService {
 
     User registerUser(User user);
 
-    User findRegistrationToLogin(String email, String password);
+  //  User findRegistrationToLogin(String email, String password);
 }

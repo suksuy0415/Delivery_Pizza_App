@@ -30,16 +30,16 @@ public class UserController {
         //   return new ResponseEntity<>("user successful",HttpStatus.OK);
     }
 
-    @PostMapping("/login")
-    public ResponseEntity<?> loginUser(@RequestBody User user)
-    {
-        User retrievedUser = userService.findRegistrationToLogin(user.getEmail(),user.getPassword());
+//    @PostMapping("/login")
+//    public ResponseEntity<?> loginUser(@RequestBody User user)
+//    {
+//        User retrievedUser = userService.findRegistrationToLogin(user.getEmail(),user.getPassword());
+//
+////        if(retrievedUser==null)
+////        {
+////            //throw new InvalidCredentialsException();
+////        }
+//
+//        return new ResponseEntity<>("login successful",HttpStatus.OK);
 
-        if(retrievedUser==null)
-        {
-            //throw new InvalidCredentialsException();
-        }
-
-        return new ResponseEntity<>("login successful",HttpStatus.OK);
-    }
 }
