@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EurekaServerApp" />
+        <module name="PizzaDetails" />
+        <module name="RegisterUser" />
+        <module name="SpringAPICloudGateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringGatewayAPI" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="EurekaServerApp" options="-parameters" />
+      <module name="PizzaDetails" options="-parameters" />
+      <module name="RegisterUser" options="-parameters" />
+      <module name="SpringAPICloudGateway" options="-parameters" />
+      <module name="SpringGatewayAPI" options="-parameters" />
+    </option>
+  </component>
+</project>
