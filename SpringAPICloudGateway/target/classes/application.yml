@@ -5,6 +5,18 @@ spring:
     name: spring-cloud-api-gateway
   main:
     web-application-type: reactive
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders:
+              - content-type
+            allowedMethods:
+              - GET
+              - POST
+
     #Specify how gateway will understand which request is going to be mapped to
     #which microservice, hence we need to perform route configuration, give the service names here
 #  cloud:

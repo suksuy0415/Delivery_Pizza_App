@@ -12,10 +12,10 @@ public class AppConfig {
         return builder.routes()
                 .route(p -> p
                         .path("/api/v1/**")
-                        .uri("lb://user-register-service"))
+                        .uri("http://user-register-service:8085/"))
                 .route(p -> p
-                        .path("/api/v2/order/**")
-                        .uri("lb://user-pizza-service"))
+                        .path("/api/v2/**")
+                        .uri("http://user-pizza-service:8083/"))
                 .build();
     }
 }

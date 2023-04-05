@@ -24,6 +24,12 @@ public class PizzaServiceImpl implements PizzaService{
     }
 
 
+    @Override
+    public List<Pizza> find() {
+
+        return pizzaRepository.findAll();
+    }
+
 //    public List<Pizza> findallOrdersDetails() {
 //        return pizzaRepository.findAll();
 //    }

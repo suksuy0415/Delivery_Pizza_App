@@ -17,12 +17,12 @@ public class Pizza {
 
     private String pizzaType;
 
-    private int quantity;
+    private String quantity;
 
-    private int price;
+    private String price;
 
 
-    public Pizza(String userName, String name, String address, String pizzaType, int quantity, int price) {
+    public Pizza(String userName, String name, String address, String pizzaType, String quantity, String price) {
         this.userName = userName;
         this.name = name;
         this.address = address;
@@ -64,19 +64,19 @@ public class Pizza {
         this.pizzaType = pizzaType;
     }
 
-    public int getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
